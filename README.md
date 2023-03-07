@@ -32,10 +32,14 @@ The [mode][mode] for a [Kumaraswamy's double bounded][kumaraswamy-distribution] 
 
 <!-- <equation class="equation" label="eq:kumaraswamy_mode" align="center" raw="\operatorname{mode}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}" alt="Mode for a Kumaraswamy's double bounded distribution."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}" data-equation="eq:kumaraswamy_mode">
+```math
+\operatorname{mode}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \left(\frac{a-1}{ab-1}\right)^{1/a}" data-equation="eq:kumaraswamy_mode">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/kumaraswamy/mode/docs/img/equation_kumaraswamy_mode.svg" alt="Mode for a Kumaraswamy's double bounded distribution.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -235,7 +239,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
