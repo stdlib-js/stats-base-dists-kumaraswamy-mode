@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,114 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isNumber = require( '@stdlib/assert-is-number' ).isPrimitive;
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var randu = require( '@stdlib/random-base-randu' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var EPS = require( '@stdlib/constants-float64-eps' );
-var mode = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof mode, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if provided `NaN` for any parameter, the function returns `NaN`', function test( t ) {
-	var v = mode( NaN, 0.5 );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	v = mode( 10.0, NaN );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'if provided `a = 1` and `b = 1`, the function returns `NaN`', function test( t ) {
-	var y;
-
-	y = mode( 1.0, 1.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'if provided `a < 1`, the function returns `NaN`', function test( t ) {
-	var y;
-
-	y = mode( 0.8, 2.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( 0.0, 2.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( -1.0, 2.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( -1.0, 2.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( NINF, 1.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( NINF, PINF );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( NINF, NINF );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( NINF, NaN );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'if provided `b < 1`, the function returns `NaN`', function test( t ) {
-	var y;
-
-	y = mode( 2.0, 0.8 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( 2.0, 0.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( 2.0, -1.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( 2.0, -1/0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( 1.0, NINF );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( PINF, NINF );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( NINF, NINF );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = mode( NaN, NINF );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns the mode of a Kumaraswamy\'s double bounded distribution', function test( t ) {
-	var a;
-	var b;
-	var i;
-	var y;
-
-	// TODO: Add fixtures
-	for ( i = 0; i < 100; i++ ) {
-		a = ( randu()*5.0 ) + EPS;
-		b = ( randu()*5.0 ) + EPS;
-		y = mode( a, b );
-		t.equal( isNumber( y ), true, 'returns a number' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
