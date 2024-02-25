@@ -69,7 +69,7 @@ for `a >= 1`, `b >=1` and not `a = b = 1`.
 ## Usage
 
 ```javascript
-import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@esm/index.mjs';
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@v0.2.1-esm/index.mjs';
 ```
 
 #### mode( a, b )
@@ -151,7 +151,7 @@ y = mode( 2.0, 0.0 );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@esm/index.mjs';
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@v0.2.1-esm/index.mjs';
 
 var a;
 var b;
