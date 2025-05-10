@@ -2,6 +2,63 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-05-10)
+
+<section class="features">
+
+### Features
+
+-   [`c7854d1`](https://github.com/stdlib-js/stdlib/commit/c7854d17a603d665052700c78399ae8c80541133) - add C implementation for `stats/base/dists/kumaraswamy/mode` [(#4062)](https://github.com/stdlib-js/stdlib/pull/4062)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3702](https://github.com/stdlib-js/stdlib/issues/3702)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`c7854d1`](https://github.com/stdlib-js/stdlib/commit/c7854d17a603d665052700c78399ae8c80541133) - **feat:** add C implementation for `stats/base/dists/kumaraswamy/mode` [(#4062)](https://github.com/stdlib-js/stdlib/pull/4062) _(by Manvith M, Philipp Burckhardt, stdlib-bot)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Manvith M
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-28)
