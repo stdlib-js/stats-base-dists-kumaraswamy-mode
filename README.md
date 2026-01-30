@@ -69,7 +69,7 @@ for `a >= 1`, `b >=1` and not `a = b = 1`.
 ## Usage
 
 ```javascript
-import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@esm/index.mjs';
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@v0.3.0-esm/index.mjs';
 ```
 
 #### mode( a, b )
@@ -152,7 +152,7 @@ y = mode( 2.0, 0.0 );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@esm/index.mjs';
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy-mode@v0.3.0-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
